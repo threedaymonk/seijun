@@ -206,11 +206,17 @@ style "metacity-frame" {
   bg[NORMAL] = "#efefef"
 }
 
+style "checkbutton" = "button" {
+  text[NORMAL]        = "#ffffff"
+}
+
 class "MetaFrames" style "metacity-frame"
 class "WnckPager" style "pager"
 class "GtkScrollbar" style "scrollbar"
 class "GtkWidget" style "default"
 class "GtkButton" style "button"
+class "GtkCheckButton" style "checkbutton"
+class "GtkRadioButton" style "checkbutton"
 class "GtkScale" style "button"
 class "GtkCombo" style "button"
 class "GtkRange" style "range"
