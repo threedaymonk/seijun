@@ -52,13 +52,13 @@ style "default"
   bg[ACTIVE]        = "#efefef"
   bg[SELECTED]      = "#444444"
   bg[INSENSITIVE]   = "#efefef"
-  
+
   base[NORMAL]      = "#fcfcfc"
   base[PRELIGHT]    = "#444444"
   base[ACTIVE]      = "#444444"
   base[SELECTED]    = "#444444"
   base[INSENSITIVE] = "#efefef"
-  
+
   text[NORMAL]      = "#000000"
   text[PRELIGHT]    = "#efefef"
   text[ACTIVE]      = "#efefef"
