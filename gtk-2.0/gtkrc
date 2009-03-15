@@ -52,13 +52,13 @@ style "default"
   bg[ACTIVE]        = "#efefef"
   bg[SELECTED]      = "#444444"
   bg[INSENSITIVE]   = "#efefef"
-	
+  
   base[NORMAL]      = "#fcfcfc"
   base[PRELIGHT]    = "#444444"
   base[ACTIVE]      = "#444444"
   base[SELECTED]    = "#444444"
   base[INSENSITIVE] = "#efefef"
-	
+  
   text[NORMAL]      = "#000000"
   text[PRELIGHT]    = "#efefef"
   text[ACTIVE]      = "#efefef"
@@ -66,15 +66,15 @@ style "default"
   text[INSENSITIVE] = "#bababa"
 
 engine "murrine"  {
-	contrast = 1.0
-	menuitemstyle = 1 # 0 = flat, 1 = glassy, 2 = striped
-	scrollbar_color = "#c6c7b4"
-	glazestyle = 0 # 0 = flat hilight, 1 = curved hilight, 2 = concave style
-	menubarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
-	menubaritemstyle = 1 # 0 = menuitem look, 1 = button look
-	listviewheaderstyle = 1 # 0 = flat, 1 = glassy
-	roundness = 1 # 0 = squared, 1 = old default, more will increase roundness
-	animation = TRUE # FALSE = disabled, TRUE = enabled
+  contrast = 1.0
+  menuitemstyle = 1 # 0 = flat, 1 = glassy, 2 = striped
+  scrollbar_color = "#c6c7b4"
+  glazestyle = 0 # 0 = flat hilight, 1 = curved hilight, 2 = concave style
+  menubarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+  menubaritemstyle = 1 # 0 = menuitem look, 1 = button look
+  listviewheaderstyle = 1 # 0 = flat, 1 = glassy
+  roundness = 1 # 0 = squared, 1 = old default, more will increase roundness
+  animation = TRUE # FALSE = disabled, TRUE = enabled
   }
 }
 
@@ -185,26 +185,26 @@ style "pager" = "panelbg"
 {
   xthickness = 2
   ythickness = 2
-  bg[NORMAL]	= "#c6c7b4"
-  bg[PRELIGHT]	= "#c6c7b4"
-  fg[PRELIGHT]	= "#c6c7b4"
-  fg[ACTIVE]	= "#c6c7b4"
+  bg[NORMAL]  = "#c6c7b4"
+  bg[PRELIGHT]  = "#c6c7b4"
+  fg[PRELIGHT]  = "#c6c7b4"
+  fg[ACTIVE]  = "#c6c7b4"
 }
 
 style "scrollbar"
 {
-  bg[NORMAL]	= "#efefef"
-  bg[PRELIGHT]	= "#444444"
-  fg[PRELIGHT]	= "#ffffff"
-  fg[ACTIVE]	= "#ffffff"
+  bg[NORMAL]  = "#efefef"
+  bg[PRELIGHT]  = "#444444"
+  fg[PRELIGHT]  = "#ffffff"
+  fg[ACTIVE]  = "#ffffff"
 }
 
 style "spinbutton"
 {
-  bg[NORMAL]	= "#efefef"
-  bg[PRELIGHT]	= "#444444"
-  fg[PRELIGHT]	= "#c6c7b4"
-  fg[ACTIVE]	= "#c6c7b4"
+  bg[NORMAL]  = "#efefef"
+  bg[PRELIGHT]  = "#444444"
+  fg[PRELIGHT]  = "#c6c7b4"
+  fg[ACTIVE]  = "#c6c7b4"
 }
 
 style "list-header" = "default"
@@ -213,8 +213,8 @@ style "list-header" = "default"
 
 style "ruler" = "wider"
 {
-  bg[NORMAL]	="#fcfcfc"
-  fg[NORMAL]	="#444444"
+  bg[NORMAL]  ="#fcfcfc"
+  fg[NORMAL]  ="#444444"
 }
 
 style "evolution" = "default"
@@ -274,7 +274,7 @@ class "*HandleBox" style "toolbar"
 widget_class "*Toolbar" style "toolbar"
 widget_class "*MenuItem.*" style "menuitem"
 widget_class "*MenuBar.*"  style "menubar"
-widget_class "*Panel*GtkButton"	style "panelbuttons"
+widget_class "*Panel*GtkButton"  style "panelbuttons"
 widget_class "*.GtkComboBox.GtkButton" style "combo"
 widget_class "*.GtkCombo.GtkButton"    style "combo"
 widget_class "*.tips.*.GtkToggleButton" style "tasklist"
