@@ -14,4 +14,4 @@ h2. Differences from Metabox
 
 h2. Installation
 
-Create a @~/.theme@ directory (if you don't have one already), change into it, and clone the repository.
+Create a @~/.themes@ directory (if you don't have one already), change into it, and clone the repository.
