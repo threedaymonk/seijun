@@ -7,7 +7,6 @@
 include "extras/panelbg.rc" #include this for the panel-background
 include "extras/handles.rc" #include this for better matching handles (my opinion)
 #include "extras/desktop-icon-labels.rc" #include to show icon-labels on the desktop (check out the rc for alpha and color)
-include "extras/mac-scrollbars.rc" #include for macish scrollbars
 
 gtk-button-images = 0 #disabled icons on buttons like close etc.
 gtk-icon-sizes = "panel-menu=16,16" #size of icons in the panel-menu
