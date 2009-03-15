@@ -65,16 +65,16 @@ style "default"
   text[SELECTED]    = "#fcfcfc"
   text[INSENSITIVE] = "#bababa"
 
-engine "murrine"  {
-  contrast            = 1.0
-  scrollbar_color     = "#c6c7b4"
-  menuitemstyle       = 1     # 0 = flat, 1 = glassy, 2 = striped
-  glazestyle          = 0     # 0 = flat hilight, 1 = curved hilight, 2 = concave style
-  menubarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
-  menubaritemstyle    = 1     # 0 = menuitem look, 1 = button look
-  listviewheaderstyle = 1     # 0 = flat, 1 = glassy
-  roundness           = 1     # 0 = squared, 1 = old default, more will increase roundness
-  animation           = TRUE  # FALSE = disabled, TRUE = enabled
+  engine "murrine"  {
+    contrast            = 1.0
+    scrollbar_color     = "#c6c7b4"
+    menuitemstyle       = 1     # 0 = flat, 1 = glassy, 2 = striped
+    glazestyle          = 0     # 0 = flat hilight, 1 = curved hilight, 2 = concave style
+    menubarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+    menubaritemstyle    = 1     # 0 = menuitem look, 1 = button look
+    listviewheaderstyle = 1     # 0 = flat, 1 = glassy
+    roundness           = 1     # 0 = squared, 1 = old default, more will increase roundness
+    animation           = TRUE  # FALSE = disabled, TRUE = enabled
   }
 }
 
