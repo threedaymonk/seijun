@@ -26,12 +26,14 @@ style "default"
   GtkCheckButton::indicator_size   = 15
   GtkRadioButton::indicator_size   = 15
   GtkMenuBar::internal-padding     = 0
+  GtkMenuBar::shadow-type          = GTK_SHADOW_NONE
   GtkTreeView::expander_size       = 15
   GtkExpander::expander_size       = 15
   GtkScale::slider-length          = 15
   GtkProgressbar::indicator_size   = 15
   GtkToolbar::space_style          = GTK_TOOLBAR_SPACE_EMPTY
   GtkToolbar::space_size           = 4
+  GtkToolbar::shadow-type          = GTK_SHADOW_NONE
   GtkOptionMenu::indicator_size    = { 2, 2 }
   GtkOptionMenu::indicator_spacing = { 2, 2 }
   GtkComboBox::indicator_size      = { 2, 2 }
