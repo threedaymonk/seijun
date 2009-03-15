@@ -1,6 +1,0 @@
-style "panelbg"
-{
-  xthickness = 0
-  ythickness = 0
-  bg_pixmap[NORMAL] = "panelbg.png" 
-}
