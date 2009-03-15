@@ -14,7 +14,7 @@ style "default"
 {
   GtkEntry::cursor_color = "#c6c7b4"
   GtkLabel::cursor_color = "#c6c7b4"
-  GtkBase::cursor_color = "#c6c7b4"
+  GtkBase::cursor_color  = "#c6c7b4"
 
   GtkButton::default_border        = { 0, 0, 0, 0 }
   GtkRange::trough_border          = 0
@@ -45,18 +45,18 @@ style "default"
   fg[PRELIGHT]      = "#efefef"
   fg[ACTIVE]        = "#000000"
   fg[SELECTED]      = "#efefef"
-  fg[INSENSITIVE]   = "#444444"
+  fg[INSENSITIVE]   = "#444433"
 
   bg[NORMAL]        = "#efefef"
-  bg[PRELIGHT]      = "#444444"
+  bg[PRELIGHT]      = "#444433"
   bg[ACTIVE]        = "#efefef"
-  bg[SELECTED]      = "#444444"
+  bg[SELECTED]      = "#444433"
   bg[INSENSITIVE]   = "#efefef"
 
   base[NORMAL]      = "#fcfcfc"
-  base[PRELIGHT]    = "#444444"
-  base[ACTIVE]      = "#444444"
-  base[SELECTED]    = "#444444"
+  base[PRELIGHT]    = "#444433"
+  base[ACTIVE]      = "#444433"
+  base[SELECTED]    = "#444433"
   base[INSENSITIVE] = "#efefef"
 
   text[NORMAL]      = "#000000"
@@ -95,7 +95,7 @@ style "entry" = "wider" {
 style "button" = "wider" {
   bg[NORMAL]      = "#efefef"
   bg[INSENSITIVE] = "#eaeaea"
-  bg[PRELIGHT]    = "#444444"
+  bg[PRELIGHT]    = "#444433"
   bg[ACTIVE]      = "#c6c7b4"
 }
 
@@ -175,14 +175,14 @@ style "pager" = "panelbg" {
 
 style "scrollbar" {
   bg[NORMAL]   = "#efefef"
-  bg[PRELIGHT] = "#444444"
+  bg[PRELIGHT] = "#444433"
   fg[PRELIGHT] = "#ffffff"
   fg[ACTIVE]   = "#ffffff"
 }
 
 style "spinbutton" {
   bg[NORMAL]   = "#efefef"
-  bg[PRELIGHT] = "#444444"
+  bg[PRELIGHT] = "#444433"
   fg[PRELIGHT] = "#c6c7b4"
   fg[ACTIVE]   = "#c6c7b4"
 }
@@ -192,12 +192,12 @@ style "list-header" = "default" {
 
 style "ruler" = "wider" {
   bg[NORMAL] = "#fcfcfc"
-  fg[NORMAL] = "#444444"
+  fg[NORMAL] = "#444433"
 }
 
 style "evolution" = "default" {
-  bg[ACTIVE]   = "#444444"
-  bg[SELECTED] = "#444444"
+  bg[ACTIVE]   = "#444433"
+  bg[SELECTED] = "#444433"
   fg[ACTIVE]   = "#efefef"
   fg[SELECTED] = "#c6c7b4"
 }
