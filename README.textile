@@ -1,0 +1,17 @@
+h1. Thetabox
+
+Thetabox is a simple, plain, subtle XFWM4 theme based on the Metabox theme that comes with XFCE.
+
+!http://github.com/threedaymonk/thetabox/raw/master/sample.png(Sample screenshot)!
+
+h2. Differences from Metabox
+
+* Window borders are less obtrusive (#666 in place of #000).
+* There is no border between the title bar and window contents.
+* Similarly, there is no border between the bottom border and the window contents, although the size of the handle remains unchanged.
+* The window menu icon is slightly different.
+* There are no PNG gradient overlays.
+
+h2. Installation
+
+Create a @~/.theme@ directory (if you don't have one already), change into it, and clone the repository.
