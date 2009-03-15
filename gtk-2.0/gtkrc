@@ -7,8 +7,8 @@
 include "extras/handles.rc" #include this for better matching handles (my opinion)
 #include "extras/desktop-icon-labels.rc" #include to show icon-labels on the desktop (check out the rc for alpha and color)
 
-gtk-button-images = 0 #disabled icons on buttons like close etc.
-gtk-icon-sizes = "panel-menu=16,16" #size of icons in the panel-menu
+gtk-button-images = 0 # disable icons on buttons like close etc.
+gtk-icon-sizes    = "panel-menu=16,16" #size of icons in the panel-menu
 
 style "default"
 {
@@ -16,27 +16,27 @@ style "default"
   GtkLabel::cursor_color = "#c6c7b4"
   GtkBase::cursor_color = "#c6c7b4"
 
-  GtkButton::default_border = { 0, 0, 0, 0 }
-  GtkRange::trough_border = 0
-  GtkPaned::handle_size = 15
-  GtkRange::slider_width = 15
-  GtkRange::stepper_size = 15
-  GtkRange::stepper_spacing = 0
-  GtkScrollbar::min_slider_length = 15
-  GtkCheckButton::indicator_size = 15
-  GtkRadioButton::indicator_size = 15
-  GtkMenuBar::internal-padding = 0
-  GtkTreeView::expander_size = 15
-  GtkExpander::expander_size = 15
-  GtkScale::slider-length = 15
-  GtkProgressbar::indicator_size = 15
-  GtkToolbar::space_style = GTK_TOOLBAR_SPACE_EMPTY
-  GtkToolbar::space_size = 4
-  GtkOptionMenu::indicator_size = { 2, 2 }
+  GtkButton::default_border        = { 0, 0, 0, 0 }
+  GtkRange::trough_border          = 0
+  GtkPaned::handle_size            = 15
+  GtkRange::slider_width           = 15
+  GtkRange::stepper_size           = 15
+  GtkRange::stepper_spacing        = 0
+  GtkScrollbar::min_slider_length  = 15
+  GtkCheckButton::indicator_size   = 15
+  GtkRadioButton::indicator_size   = 15
+  GtkMenuBar::internal-padding     = 0
+  GtkTreeView::expander_size       = 15
+  GtkExpander::expander_size       = 15
+  GtkScale::slider-length          = 15
+  GtkProgressbar::indicator_size   = 15
+  GtkToolbar::space_style          = GTK_TOOLBAR_SPACE_EMPTY
+  GtkToolbar::space_size           = 4
+  GtkOptionMenu::indicator_size    = { 2, 2 }
   GtkOptionMenu::indicator_spacing = { 2, 2 }
-  GtkComboBox::indicator_size = { 2, 2 }
-  GtkComboBox::indicator_spacing = { 2, 2 }
-  GtkWidget::focus_padding = 0
+  GtkComboBox::indicator_size      = { 2, 2 }
+  GtkComboBox::indicator_spacing   = { 2, 2 }
+  GtkWidget::focus_padding         = 0
 
   xthickness = 1
   ythickness = 1
@@ -66,167 +66,143 @@ style "default"
   text[INSENSITIVE] = "#bababa"
 
 engine "murrine"  {
-  contrast = 1.0
-  menuitemstyle = 1 # 0 = flat, 1 = glassy, 2 = striped
-  scrollbar_color = "#c6c7b4"
-  glazestyle = 0 # 0 = flat hilight, 1 = curved hilight, 2 = concave style
-  menubarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
-  menubaritemstyle = 1 # 0 = menuitem look, 1 = button look
-  listviewheaderstyle = 1 # 0 = flat, 1 = glassy
-  roundness = 1 # 0 = squared, 1 = old default, more will increase roundness
-  animation = TRUE # FALSE = disabled, TRUE = enabled
+  contrast            = 1.0
+  scrollbar_color     = "#c6c7b4"
+  menuitemstyle       = 1     # 0 = flat, 1 = glassy, 2 = striped
+  glazestyle          = 0     # 0 = flat hilight, 1 = curved hilight, 2 = concave style
+  menubarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+  menubaritemstyle    = 1     # 0 = menuitem look, 1 = button look
+  listviewheaderstyle = 1     # 0 = flat, 1 = glassy
+  roundness           = 1     # 0 = squared, 1 = old default, more will increase roundness
+  animation           = TRUE  # FALSE = disabled, TRUE = enabled
   }
 }
 
-style "wide" = "default"
-{
+style "wide" = "default" {
   xthickness = 2
   ythickness = 2
 }
 
-style "wider" = "default"
-{
+style "wider" = "default" {
   xthickness = 3
   ythickness = 3
 }
 
-style "entry" = "wider"
-{
+style "entry" = "wider" {
   bg[SELECTED] = "#c6c7b4"
 }
 
-style "button" = "wider"
-{
-  bg[NORMAL] = "#efefef"
+style "button" = "wider" {
+  bg[NORMAL]      = "#efefef"
   bg[INSENSITIVE] = "#eaeaea"
-  bg[PRELIGHT] = "#444444"
-  bg[ACTIVE] = "#c6c7b4"
+  bg[PRELIGHT]    = "#444444"
+  bg[ACTIVE]      = "#c6c7b4"
 }
 
-style "notebook" = "wide"
-{
-  bg[NORMAL]        = "#fcfcfc"
+style "notebook" = "wide" {
+  bg[NORMAL] = "#fcfcfc"
 }
 
-style "tasklist" = "default"
-{
+style "tasklist" = "default" {
   bg[NORMAL] = "#efefef"
   xthickness = 2
   ythickness = 2
 }
 
-style "menu" = "default"
-{
+style "menu" = "default" {
   xthickness = 2
   ythickness = 1
 }
 
-style "menubar" = "default"
-{
+style "menubar" = "default" {
   xthickness = 2
   ythickness = 1
 }
 
-style "menuitem" = "default"
-{
-  xthickness = 3
-  ythickness = 3
-  fg[NORMAL] = "#000000"
-  fg[PRELIGHT] = "#fcfcfc"
+style "menuitem" = "default" {
+  xthickness     = 3
+  ythickness     = 3
+  fg[NORMAL]     = "#000000"
+  fg[PRELIGHT]   = "#fcfcfc"
   text[PRELIGHT] = "#fcfcfc"
 }
 
-style "toolbar"
-  {
+style "toolbar" {
   xthickness = 1
   ythickness = 2
-  }
+}
 
-style "menubar-item"
-{
+style "menubar-item" {
   ythickness = 3
 }
 
-style "tree" = "default"
-{
+style "tree" = "default" {
   xthickness = 2
   ythickness = 2
 }
 
-style "tips" = "default"
-{
+style "tips" = "default" {
   xthickness = 4
   ythickness = 4
   bg[NORMAL] = "#fcfcfc"
 }
 
-style "progressbar"
-{
-  xthickness = 1
-  ythickness = 1
+style "progressbar" {
+  xthickness   = 1
+  ythickness   = 1
   fg[PRELIGHT] = "#000000"
-  bg[NORMAL] = "#fcfcfc"
+  bg[NORMAL]   = "#fcfcfc"
   bg[SELECTED] = "#c6c7b4"
 }
 
-style "range" = "wide"
-{
+style "range" = "wide" {
 }
 
-style "combo" = "button"
-{
+style "combo" = "button" {
 }
 
-style "panelbuttons" = "button"
-{
+style "panelbuttons" = "button" {
 }
 
-style "pager" = "panelbg"
-{
-  xthickness = 2
-  ythickness = 2
-  bg[NORMAL]  = "#c6c7b4"
-  bg[PRELIGHT]  = "#c6c7b4"
-  fg[PRELIGHT]  = "#c6c7b4"
-  fg[ACTIVE]  = "#c6c7b4"
+style "pager" = "panelbg" {
+  xthickness   = 2
+  ythickness   = 2
+  bg[NORMAL]   = "#c6c7b4"
+  bg[PRELIGHT] = "#c6c7b4"
+  fg[PRELIGHT] = "#c6c7b4"
+  fg[ACTIVE]   = "#c6c7b4"
 }
 
-style "scrollbar"
-{
-  bg[NORMAL]  = "#efefef"
-  bg[PRELIGHT]  = "#444444"
-  fg[PRELIGHT]  = "#ffffff"
-  fg[ACTIVE]  = "#ffffff"
+style "scrollbar" {
+  bg[NORMAL]   = "#efefef"
+  bg[PRELIGHT] = "#444444"
+  fg[PRELIGHT] = "#ffffff"
+  fg[ACTIVE]   = "#ffffff"
 }
 
-style "spinbutton"
-{
-  bg[NORMAL]  = "#efefef"
-  bg[PRELIGHT]  = "#444444"
-  fg[PRELIGHT]  = "#c6c7b4"
-  fg[ACTIVE]  = "#c6c7b4"
+style "spinbutton" {
+  bg[NORMAL]   = "#efefef"
+  bg[PRELIGHT] = "#444444"
+  fg[PRELIGHT] = "#c6c7b4"
+  fg[ACTIVE]   = "#c6c7b4"
 }
 
-style "list-header" = "default"
-{
+style "list-header" = "default" {
 }
 
-style "ruler" = "wider"
-{
-  bg[NORMAL]  ="#fcfcfc"
-  fg[NORMAL]  ="#444444"
+style "ruler" = "wider" {
+  bg[NORMAL] = "#fcfcfc"
+  fg[NORMAL] = "#444444"
 }
 
-style "evolution" = "default"
-{
+style "evolution" = "default" {
   bg[ACTIVE]   = "#444444"
   bg[SELECTED] = "#444444"
   fg[ACTIVE]   = "#efefef"
   fg[SELECTED] = "#c6c7b4"
 }
 
-style "metacity-frame"
-{
+style "metacity-frame" {
   bg[NORMAL] = "#efefef"
 }
 
