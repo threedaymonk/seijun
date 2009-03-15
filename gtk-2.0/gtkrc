@@ -110,6 +110,7 @@ style "notebook" = "wide"
 
 style "tasklist" = "default"
 {
+  bg[NORMAL] = "#efefef"
   xthickness = 2
   ythickness = 2
 }
