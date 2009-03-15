@@ -1,6 +1,6 @@
 h1. Thetabox
 
-Thetabox is a simple, plain, subtle XFWM4 theme based on the Metabox theme that comes with XFCE.
+Thetabox is a simple, plain, subtle XFWM4 theme based on the Metabox theme that comes with XFCE. It uses the GTK2 theme colours.
 
 !http://github.com/threedaymonk/thetabox/raw/master/sample.png(Sample screenshot)!
 
