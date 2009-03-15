@@ -1,0 +1,292 @@
+# Innocent GTK-Theme by Sebastian Kraft | http://needcoffee.deviantart.com
+
+###if you use the gtk-mac-menubar-patch, include the toolbar.rc and set menubarstyle = 1 (glassy)###
+
+#include "extras/toolbar.rc" #include this for the toolbar-background (include if you use the gtk-mac-menubar-patch)
+
+include "extras/panelbg.rc" #include this for the panel-background
+include "extras/handles.rc" #include this for better matching handles (my opinion)
+#include "extras/desktop-icon-labels.rc" #include to show icon-labels on the desktop (check out the rc for alpha and color)
+include "extras/mac-scrollbars.rc" #include for macish scrollbars
+
+gtk-button-images = 0 #disabled icons on buttons like close etc.
+gtk-icon-sizes = "panel-menu=16,16" #size of icons in the panel-menu
+
+style "default"
+{
+  GtkEntry::cursor_color = "#c6c7b4"
+  GtkLabel::cursor_color = "#c6c7b4"
+  GtkBase::cursor_color = "#c6c7b4"
+
+  GtkButton::default_border = { 0, 0, 0, 0 }
+  GtkRange::trough_border = 0
+  GtkPaned::handle_size = 15
+  GtkRange::slider_width = 15
+  GtkRange::stepper_size = 15
+  GtkRange::stepper_spacing = 0
+  GtkScrollbar::min_slider_length = 15
+  GtkCheckButton::indicator_size = 15
+  GtkRadioButton::indicator_size = 15
+  GtkMenuBar::internal-padding = 0
+  GtkTreeView::expander_size = 15
+  GtkExpander::expander_size = 15
+  GtkScale::slider-length = 15
+  GtkProgressbar::indicator_size = 15
+  GtkToolbar::space_style = GTK_TOOLBAR_SPACE_EMPTY
+  GtkToolbar::space_size = 4
+  GtkOptionMenu::indicator_size = { 2, 2 }
+  GtkOptionMenu::indicator_spacing = { 2, 2 }
+  GtkComboBox::indicator_size = { 2, 2 }
+  GtkComboBox::indicator_spacing = { 2, 2 }
+  GtkWidget::focus_padding = 0
+
+  xthickness = 1
+  ythickness = 1
+
+  fg[NORMAL]        = "#000000"
+  fg[PRELIGHT]      = "#efefef"
+  fg[ACTIVE]        = "#000000"
+  fg[SELECTED]      = "#efefef"
+  fg[INSENSITIVE]   = "#444444"
+
+  bg[NORMAL]        = "#efefef"
+  bg[PRELIGHT]      = "#444444"
+  bg[ACTIVE]        = "#efefef"
+  bg[SELECTED]      = "#444444"
+  bg[INSENSITIVE]   = "#efefef"
+	
+  base[NORMAL]      = "#fcfcfc"
+  base[PRELIGHT]    = "#444444"
+  base[ACTIVE]      = "#444444"
+  base[SELECTED]    = "#444444"
+  base[INSENSITIVE] = "#efefef"
+	
+  text[NORMAL]      = "#000000"
+  text[PRELIGHT]    = "#efefef"
+  text[ACTIVE]      = "#efefef"
+  text[SELECTED]    = "#fcfcfc"
+  text[INSENSITIVE] = "#bababa"
+
+engine "murrine"  {
+	contrast = 1.0
+	menuitemstyle = 1 # 0 = flat, 1 = glassy, 2 = striped
+	scrollbar_color = "#c6c7b4"
+	glazestyle = 0 # 0 = flat hilight, 1 = curved hilight, 2 = concave style
+	menubarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+	menubaritemstyle = 1 # 0 = menuitem look, 1 = button look
+	listviewheaderstyle = 1 # 0 = flat, 1 = glassy
+	roundness = 1 # 0 = squared, 1 = old default, more will increase roundness
+	animation = TRUE # FALSE = disabled, TRUE = enabled
+  }
+}
+
+style "wide" = "default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+style "wider" = "default"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+style "entry" = "wider"
+{
+  bg[SELECTED] = "#c6c7b4"
+}
+
+style "button" = "wider"
+{
+  bg[NORMAL] = "#efefef"
+  bg[INSENSITIVE] = "#eaeaea"
+  bg[PRELIGHT] = "#444444"
+  bg[ACTIVE] = "#c6c7b4"
+}
+
+style "notebook" = "wide"
+{
+  bg[NORMAL]        = "#fcfcfc"
+}
+
+style "tasklist" = "default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+style "menu" = "default"
+{
+  xthickness = 2
+  ythickness = 1
+}
+
+style "menubar" = "default"
+{
+  xthickness = 2
+  ythickness = 1
+}
+
+style "menuitem" = "default"
+{
+  xthickness = 3
+  ythickness = 3
+  fg[NORMAL] = "#000000"
+  fg[PRELIGHT] = "#fcfcfc"
+  text[PRELIGHT] = "#fcfcfc"
+}
+
+style "toolbar"
+  {
+  xthickness = 1
+  ythickness = 2
+  }
+
+style "menubar-item"
+{
+  ythickness = 3
+}
+
+style "tree" = "default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+style "tips" = "default"
+{
+  xthickness = 4
+  ythickness = 4
+  bg[NORMAL] = "#fcfcfc"
+}
+
+style "progressbar"
+{
+  xthickness = 1
+  ythickness = 1
+  fg[PRELIGHT] = "#000000"
+  bg[NORMAL] = "#fcfcfc"
+  bg[SELECTED] = "#c6c7b4"
+}
+
+style "range" = "wide"
+{
+}
+
+style "combo" = "button"
+{
+}
+
+style "panelbuttons" = "button"
+{
+}
+
+style "pager" = "panelbg"
+{
+  xthickness = 2
+  ythickness = 2
+  bg[NORMAL]	= "#c6c7b4"
+  bg[PRELIGHT]	= "#c6c7b4"
+  fg[PRELIGHT]	= "#c6c7b4"
+  fg[ACTIVE]	= "#c6c7b4"
+}
+
+style "scrollbar"
+{
+  bg[NORMAL]	= "#efefef"
+  bg[PRELIGHT]	= "#444444"
+  fg[PRELIGHT]	= "#ffffff"
+  fg[ACTIVE]	= "#ffffff"
+}
+
+style "spinbutton"
+{
+  bg[NORMAL]	= "#efefef"
+  bg[PRELIGHT]	= "#444444"
+  fg[PRELIGHT]	= "#c6c7b4"
+  fg[ACTIVE]	= "#c6c7b4"
+}
+
+style "list-header" = "default"
+{
+}
+
+style "ruler" = "wider"
+{
+  bg[NORMAL]	="#fcfcfc"
+  fg[NORMAL]	="#444444"
+}
+
+style "evolution" = "default"
+{
+  bg[ACTIVE]   = "#444444"
+  bg[SELECTED] = "#444444"
+  fg[ACTIVE]   = "#efefef"
+  fg[SELECTED] = "#c6c7b4"
+}
+
+style "metacity-frame"
+{
+  bg[NORMAL] = "#efefef"
+}
+
+class "MetaFrames" style "metacity-frame"
+class "WnckPager" style "pager"
+class "GtkScrollbar" style "scrollbar"
+class "GtkWidget" style "default"
+class "GtkButton" style "button"
+class "GtkScale" style "button"
+class "GtkCombo" style "button"
+class "GtkRange" style "range"
+class "GtkFrame" style "wide"
+class "GtkMenu" style "menu"
+class "GtkEntry" style "entry"
+class "GtkMenuItem" style "menuitem"
+class "GtkNotebook" style "notebook"
+class "GtkProgressBar" style "progressbar"
+class "GtkSpinButton" style "spinbutton"
+class "GtkRuler" style "ruler"
+class "GtkLayout" style "wider"
+class "*MenuBar*" style "menubar"
+class "*Toolbar" style "toolbar"
+class "GtkToolbar" style "toolbar"
+class "*BonoboDockItem" style "toolbar"
+class "GtkEventBox" style "handlebox"
+class "GtkHandleBox" style "handlebox"
+class "GtkPaned" style "handlebox"
+class "*Panel*" style "panelbg"
+class "*notif*" style "panelbg"
+class "*Notif*" style "panelbg"
+class "*Tray*" style "panelbg"
+class "*tray*" style "panelbg"
+class "*Netstatus*" style "panelbg"
+class "*netstatus*" style "panelbg"
+class "*Deskbar*" style "panelbg"
+class "*deskbar*" style "panelbg"
+widget_class "*HandleBox" style "toolbar"
+widget_class "*List" style "list-header"
+widget_class "*GtkTree*" style "list-header"
+widget_class "*GtkCList*" style "list-header"
+class "*HandleBox" style "toolbar"
+widget_class "*BonoboDockItem" style "toolbar"
+widget_class "*HandleBox" style "toolbar"
+class "*HandleBox" style "toolbar"
+widget_class "*Toolbar" style "toolbar"
+widget_class "*MenuItem.*" style "menuitem"
+widget_class "*MenuBar.*"  style "menubar"
+widget_class "*Panel*GtkButton"	style "panelbuttons"
+widget_class "*.GtkComboBox.GtkButton" style "combo"
+widget_class "*.GtkCombo.GtkButton"    style "combo"
+widget_class "*.tips.*.GtkToggleButton" style "tasklist"
+widget "gtk-tips" style "tips"
+widget_class "*.GtkTreeView.GtkButton" style "tree"
+widget_class "*.GtkCTree.GtkButton" style "tree"
+widget_class "*.GtkList.GtkButton" style "tree"
+widget_class "*.GtkCList.GtkButton" style "tree"
+widget_class "*.GtkNotebook.*.GtkEventBox" style "notebook"
+widget_class "*.GtkNotebook.*.GtkViewport" style "notebook"
+widget_class "*GtkCTree*" style "evolution"
+widget_class "*GtkList*" style "evolution"
+widget_class "*GtkCList*" style "evolution"
+widget_class "*.ETree.*" style "evolution"
