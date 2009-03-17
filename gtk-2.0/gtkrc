@@ -166,6 +166,9 @@ style "combo" = "button" {
 style "panelbuttons" = "button" {
 }
 
+style "panelbg" = "default" {
+}
+
 style "pager" = "panelbg" {
   xthickness   = 2
   ythickness   = 2
