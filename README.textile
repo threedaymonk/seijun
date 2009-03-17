@@ -1,6 +1,6 @@
 h1. Seijun 清純
 
-Seijun is a simple, plain, subtle GTK2 and XFWM4 theme based on Metabox (XFWM) and Innocent (GTK2). It uses the GTK2 theme colours.
+Seijun is a simple, plain, subtle GTK2 and XFWM4 theme based on Metabox (XFWM) and Innocent (GTK2).
 
 !http://github.com/threedaymonk/seijun/raw/master/sample.png(Sample screenshot)!
 
