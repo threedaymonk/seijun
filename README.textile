@@ -1,16 +1,22 @@
-h1. Thetabox
+h1. Seijun 清純
 
-Thetabox is a simple, plain, subtle XFWM4 theme based on the Metabox theme that comes with XFCE. It uses the GTK2 theme colours.
+Seijun is a simple, plain, subtle GTK2 and XFWM4 theme based on Metabox (XFWM) and Innocent (GTK2). It uses the GTK2 theme colours.
 
-!http://github.com/threedaymonk/thetabox/raw/master/sample.png(Sample screenshot)!
+!http://github.com/threedaymonk/seijun/raw/master/sample.png(Sample screenshot)!
 
 h2. Differences from Metabox
 
-* Window borders are less obtrusive (#666 in place of #000).
+* Window borders are less obtrusive.
 * There is no border between the title bar and window contents.
 * Similarly, there is no border between the bottom border and the window contents, although the size of the handle remains unchanged.
 * The window menu icon is slightly different.
 * There are no PNG gradient overlays.
+
+h2. Differences from Innocent
+
+* Scrollbars have the buttons at each end, not grouped at one end.
+* The dark colour in the theme is a little warmer.
+* There are no shadows on menus and toolbars.
 
 h2. Installation
 
