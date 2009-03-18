@@ -47,18 +47,18 @@ style "default"
   fg[PRELIGHT]      = "#efefef"
   fg[ACTIVE]        = "#000000"
   fg[SELECTED]      = "#efefef"
-  fg[INSENSITIVE]   = "#444433"
+  fg[INSENSITIVE]   = "#444438"
 
   bg[NORMAL]        = "#efefef"
-  bg[PRELIGHT]      = "#444433"
+  bg[PRELIGHT]      = "#444438"
   bg[ACTIVE]        = "#efefef"
-  bg[SELECTED]      = "#444433"
+  bg[SELECTED]      = "#444438"
   bg[INSENSITIVE]   = "#efefef"
 
   base[NORMAL]      = "#fcfcfc"
-  base[PRELIGHT]    = "#444433"
-  base[ACTIVE]      = "#444433"
-  base[SELECTED]    = "#444433"
+  base[PRELIGHT]    = "#444438"
+  base[ACTIVE]      = "#444438"
+  base[SELECTED]    = "#444438"
   base[INSENSITIVE] = "#efefef"
 
   text[NORMAL]      = "#000000"
@@ -97,7 +97,7 @@ style "entry" = "wider" {
 style "button" = "wider" {
   bg[NORMAL]      = "#efefef"
   bg[INSENSITIVE] = "#eaeaea"
-  bg[PRELIGHT]    = "#444433"
+  bg[PRELIGHT]    = "#444438"
   bg[ACTIVE]      = "#c6c7b4"
 }
 
@@ -180,14 +180,14 @@ style "pager" = "panelbg" {
 
 style "scrollbar" {
   bg[NORMAL]   = "#efefef"
-  bg[PRELIGHT] = "#444433"
+  bg[PRELIGHT] = "#444438"
   fg[PRELIGHT] = "#ffffff"
   fg[ACTIVE]   = "#ffffff"
 }
 
 style "spinbutton" {
   bg[NORMAL]   = "#efefef"
-  bg[PRELIGHT] = "#444433"
+  bg[PRELIGHT] = "#444438"
   fg[PRELIGHT] = "#c6c7b4"
   fg[ACTIVE]   = "#c6c7b4"
 }
@@ -197,12 +197,12 @@ style "list-header" = "default" {
 
 style "ruler" = "wider" {
   bg[NORMAL] = "#fcfcfc"
-  fg[NORMAL] = "#444433"
+  fg[NORMAL] = "#444438"
 }
 
 style "evolution" = "default" {
-  bg[ACTIVE]   = "#444433"
-  bg[SELECTED] = "#444433"
+  bg[ACTIVE]   = "#444438"
+  bg[SELECTED] = "#444438"
   fg[ACTIVE]   = "#efefef"
   fg[SELECTED] = "#c6c7b4"
 }
