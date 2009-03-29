@@ -25,7 +25,7 @@ style "default"
   GtkScrollbar::min_slider_length  = 15
   GtkCheckButton::indicator_size   = 15
   GtkRadioButton::indicator_size   = 15
-  GtkMenuBar::internal-padding     = 0
+  GtkMenuBar::internal-padding     = 2
   GtkMenuBar::shadow-type          = GTK_SHADOW_NONE
   GtkTreeView::expander_size       = 15
   GtkExpander::expander_size       = 15
