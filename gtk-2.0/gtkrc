@@ -69,7 +69,10 @@ style "default"
 
   engine "murrine"  {
     contrast            = 1.0
-    scrollbar_color     = "#c6c7b4"
+    colorize_scrollbar  = TRUE
+    scrollbarstyle      = 0     # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes,
+                                # 4 = diagonal stripes and handles, 5 = horizontal stripes,
+                                # 6 = horizontal stripes and handles
     menuitemstyle       = 1     # 0 = flat, 1 = glassy, 2 = striped
     glazestyle          = 0     # 0 = flat hilight, 1 = curved hilight, 2 = concave style
     menubarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
